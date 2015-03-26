@@ -1,0 +1,20 @@
+[package]
+
+name = "fdstream"
+version = "0.1.0"
+authors = [ "David Renshaw <david@sandstorm.io>" ]
+license = "MIT"
+description = "implementations of ::std::io::Read and ::std::io::Write for posix file descriptors"
+repository = "https://github.com/dwrensha/capnpc-rust"
+
+keywords = []
+
+[lib]
+
+name = "fdstream"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.1.3"
+
+
