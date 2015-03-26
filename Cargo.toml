@@ -1,13 +1,13 @@
 [package]
 
 name = "fdstream"
-version = "0.1.0"
+version = "0.0.2"
 authors = [ "David Renshaw <david@sandstorm.io>" ]
 license = "MIT"
 description = "implementations of ::std::io::Read and ::std::io::Write for posix file descriptors"
 repository = "https://github.com/dwrensha/fdstream"
 
-keywords = []
+keywords = ["fd", "posix", "io", "read", "write"]
 
 [lib]
 
