@@ -1,11 +1,8 @@
-#![feature(core)]
-
 extern crate libc;
 
 // copied from libstd/sys/unix/mod.rs and libstd/sys/unix/fd.rs
-pub fn cvt<T: ::std::num::SignedInt>(t: T) -> ::std::io::Result<T> {
-    let one: T = ::std::num::Int::one();
-    if t == -one {
+pub fn cvt(t: ::libc::ssize_t) -> ::std::io::Result<::libc::ssize_t> {
+    if t == -1 {
         Err(::std::io::Error::last_os_error())
     } else {
         Ok(t)
