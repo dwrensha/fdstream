@@ -9,7 +9,7 @@ pub fn cvt(t: ::libc::ssize_t) -> ::std::io::Result<::libc::ssize_t> {
     }
 }
 
-#[derive(Copy)]
+#[derive(Clone, Copy)]
 pub struct FdStream {
     fd : ::libc::c_int,
 }
